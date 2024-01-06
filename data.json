@@ -1,0 +1,1518 @@
+{
+  "version": "1.1.0",
+  "graph": {
+    "nodes": [
+      {
+        "id": "n0",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "caption": "Route"
+      },
+      {
+        "id": "n1",
+        "position": {
+          "x": 231,
+          "y": 0
+        },
+        "caption": "Destination Airport"
+      },
+      {
+        "id": "n2",
+        "position": {
+          "x": -231,
+          "y": 0
+        },
+        "caption": "Source Airport"
+      },
+      {
+        "id": "n3",
+        "position": {
+          "x": 0,
+          "y": 231
+        },
+        "caption": "Airline"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "n0",
+        "type": "Destination Airport",
+        "fromId": "n0",
+        "toId": "n1"
+      },
+      {
+        "id": "n1",
+        "type": "Source Airport",
+        "fromId": "n0",
+        "toId": "n2"
+      },
+      {
+        "id": "n2",
+        "type": "Airline",
+        "fromId": "n0",
+        "toId": "n3"
+      }
+    ]
+  },
+  "dataModel": {
+    "version": "1.1.0",
+    "graphSchemaRepresentation": {
+      "version": "1.0.0",
+      "graphSchema": {
+        "nodeLabels": [
+          {
+            "$id": "nl:n0",
+            "token": "Route"
+          },
+          {
+            "$id": "nl:n1",
+            "token": "Destination Airport"
+          },
+          {
+            "$id": "nl:n2",
+            "token": "Source Airport"
+          },
+          {
+            "$id": "nl:n3",
+            "token": "Airline"
+          }
+        ],
+        "nodeObjectTypes": [
+          {
+            "$id": "n:n0",
+            "labels": [
+              {
+                "$ref": "#nl:n0"
+              }
+            ],
+            "properties": [
+              {
+                "$id": "p:71",
+                "token": "RouteID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:72",
+                "token": "Airline",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:73",
+                "token": "Airline ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:74",
+                "token": "Source airport",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:75",
+                "token": "Source airport ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:76",
+                "token": "Destination airport",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:77",
+                "token": "Destination airport ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:78",
+                "token": "Codeshare",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:79",
+                "token": "Stops",
+                "type": {
+                  "type": "boolean"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:80",
+                "token": "Equipment",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "n:n1",
+            "labels": [
+              {
+                "$ref": "#nl:n1"
+              }
+            ],
+            "properties": [
+              {
+                "$id": "p:81",
+                "token": "Airport ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:82",
+                "token": "Name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:83",
+                "token": "City",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:84",
+                "token": "Country",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:85",
+                "token": "IATA",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:86",
+                "token": "ICAO",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:87",
+                "token": "Latitude",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:88",
+                "token": "Longitude",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:89",
+                "token": "Altitude",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:90",
+                "token": "Timezone",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:91",
+                "token": "DST",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:92",
+                "token": "Tz database time zone",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:93",
+                "token": "Type",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:94",
+                "token": "Source",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "n:n2",
+            "labels": [
+              {
+                "$ref": "#nl:n2"
+              }
+            ],
+            "properties": [
+              {
+                "$id": "p:33",
+                "token": "Airport ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:34",
+                "token": "Name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:35",
+                "token": "City",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:36",
+                "token": "Country",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:37",
+                "token": "IATA",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:38",
+                "token": "ICAO",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:39",
+                "token": "Latitude",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:40",
+                "token": "Longitude",
+                "type": {
+                  "type": "float"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:41",
+                "token": "Altitude",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:42",
+                "token": "Timezone",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:43",
+                "token": "DST",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:44",
+                "token": "Tz database time zone",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:45",
+                "token": "Type",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:46",
+                "token": "Source",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "n:n3",
+            "labels": [
+              {
+                "$ref": "#nl:n3"
+              }
+            ],
+            "properties": [
+              {
+                "$id": "p:95",
+                "token": "Airline ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:96",
+                "token": "Name",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:97",
+                "token": "Alias",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:98",
+                "token": "IATA",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:99",
+                "token": "ICAO",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:100",
+                "token": "Callsign",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:101",
+                "token": "Country",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:102",
+                "token": "Active",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          }
+        ],
+        "relationshipTypes": [
+          {
+            "$id": "rt:n0",
+            "token": "Destination Airport"
+          },
+          {
+            "$id": "rt:n1",
+            "token": "Source Airport"
+          },
+          {
+            "$id": "rt:n2",
+            "token": "Airline"
+          }
+        ],
+        "relationshipObjectTypes": [
+          {
+            "$id": "r:n0",
+            "type": {
+              "$ref": "#rt:n0"
+            },
+            "from": {
+              "$ref": "#n:n0"
+            },
+            "to": {
+              "$ref": "#n:n1"
+            },
+            "properties": [
+              {
+                "$id": "p:103",
+                "token": "Airline",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:104",
+                "token": "Airline ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:105",
+                "token": "Source airport",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:106",
+                "token": "Source airport ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:107",
+                "token": "Destination airport",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:108",
+                "token": "Codeshare",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:109",
+                "token": "Stops",
+                "type": {
+                  "type": "boolean"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:110",
+                "token": "Equipment",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "r:n1",
+            "type": {
+              "$ref": "#rt:n1"
+            },
+            "from": {
+              "$ref": "#n:n0"
+            },
+            "to": {
+              "$ref": "#n:n2"
+            },
+            "properties": [
+              {
+                "$id": "p:63",
+                "token": "Airline",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:64",
+                "token": "Airline ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:65",
+                "token": "Source airport",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:66",
+                "token": "Destination airport",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:67",
+                "token": "Destination airport ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:68",
+                "token": "Codeshare",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:69",
+                "token": "Stops",
+                "type": {
+                  "type": "boolean"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:70",
+                "token": "Equipment",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          },
+          {
+            "$id": "r:n2",
+            "type": {
+              "$ref": "#rt:n2"
+            },
+            "from": {
+              "$ref": "#n:n0"
+            },
+            "to": {
+              "$ref": "#n:n3"
+            },
+            "properties": [
+              {
+                "$id": "p:111",
+                "token": "Airline",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:112",
+                "token": "Source airport",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:113",
+                "token": "Source airport ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:114",
+                "token": "Destination airport",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:115",
+                "token": "Destination airport ID",
+                "type": {
+                  "type": "integer"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:116",
+                "token": "Codeshare",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:117",
+                "token": "Stops",
+                "type": {
+                  "type": "boolean"
+                },
+                "nullable": true
+              },
+              {
+                "$id": "p:118",
+                "token": "Equipment",
+                "type": {
+                  "type": "string"
+                },
+                "nullable": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "graphSchemaExtensionsRepresentation": {
+      "nodeKeyProperties": [
+        {
+          "node": {
+            "$ref": "#n:n2"
+          },
+          "keyProperty": {
+            "$ref": "#p:33"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n0"
+          },
+          "keyProperty": {
+            "$ref": "#p:71"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n1"
+          },
+          "keyProperty": {
+            "$ref": "#p:81"
+          }
+        },
+        {
+          "node": {
+            "$ref": "#n:n3"
+          },
+          "keyProperty": {
+            "$ref": "#p:95"
+          }
+        }
+      ]
+    },
+    "graphMappingRepresentation": {
+      "fileSchemas": [
+        {
+          "$id": "f:1",
+          "fileName": "reducedRoutes.csv",
+          "expanded": true,
+          "fields": [
+            {
+              "name": "RouteID",
+              "type": "integer",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "Airline",
+              "type": "string",
+              "sample": "2B",
+              "include": true
+            },
+            {
+              "name": "Airline ID",
+              "type": "integer",
+              "sample": "410",
+              "include": true
+            },
+            {
+              "name": "Source airport",
+              "type": "string",
+              "sample": "AER",
+              "include": true
+            },
+            {
+              "name": "Source airport ID",
+              "type": "integer",
+              "sample": "2965",
+              "include": true
+            },
+            {
+              "name": "Destination airport",
+              "type": "string",
+              "sample": "KZN",
+              "include": true
+            },
+            {
+              "name": "Destination airport ID",
+              "type": "integer",
+              "sample": "2990",
+              "include": true
+            },
+            {
+              "name": "Codeshare",
+              "type": "string",
+              "sample": "",
+              "include": true
+            },
+            {
+              "name": "Stops",
+              "type": "boolean",
+              "sample": "0",
+              "include": true
+            },
+            {
+              "name": "Equipment",
+              "type": "string",
+              "sample": "CR2",
+              "include": true
+            }
+          ]
+        },
+        {
+          "$id": "f:2",
+          "fileName": "reducedAirlines.csv",
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Airline ID",
+              "type": "integer",
+              "sample": "24",
+              "include": true
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "sample": "American Airlines",
+              "include": true
+            },
+            {
+              "name": "Alias",
+              "type": "string",
+              "sample": "\\N",
+              "include": true
+            },
+            {
+              "name": "IATA",
+              "type": "string",
+              "sample": "AA",
+              "include": true
+            },
+            {
+              "name": "ICAO",
+              "type": "string",
+              "sample": "AAL",
+              "include": true
+            },
+            {
+              "name": "Callsign",
+              "type": "string",
+              "sample": "AMERICAN",
+              "include": true
+            },
+            {
+              "name": "Country",
+              "type": "string",
+              "sample": "United States",
+              "include": true
+            },
+            {
+              "name": "Active",
+              "type": "string",
+              "sample": "Y",
+              "include": true
+            }
+          ]
+        },
+        {
+          "$id": "f:3",
+          "fileName": "reducedAirports.csv",
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Airport ID",
+              "type": "integer",
+              "sample": "29",
+              "include": true
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "sample": "Baker Lake Airport",
+              "include": true
+            },
+            {
+              "name": "City",
+              "type": "string",
+              "sample": "Baker Lake",
+              "include": true
+            },
+            {
+              "name": "Country",
+              "type": "string",
+              "sample": "Canada",
+              "include": true
+            },
+            {
+              "name": "IATA",
+              "type": "string",
+              "sample": "YBK",
+              "include": true
+            },
+            {
+              "name": "ICAO",
+              "type": "string",
+              "sample": "CYBK",
+              "include": true
+            },
+            {
+              "name": "Latitude",
+              "type": "float",
+              "sample": "64.29889678960001",
+              "include": true
+            },
+            {
+              "name": "Longitude",
+              "type": "float",
+              "sample": "-96.077796936",
+              "include": true
+            },
+            {
+              "name": "Altitude",
+              "type": "integer",
+              "sample": "59",
+              "include": true
+            },
+            {
+              "name": "Timezone",
+              "type": "integer",
+              "sample": "-6",
+              "include": true
+            },
+            {
+              "name": "DST",
+              "type": "string",
+              "sample": "A",
+              "include": true
+            },
+            {
+              "name": "Tz database time zone",
+              "type": "string",
+              "sample": "America/Winnipeg",
+              "include": true
+            },
+            {
+              "name": "Type",
+              "type": "string",
+              "sample": "airport",
+              "include": true
+            },
+            {
+              "name": "Source",
+              "type": "string",
+              "sample": "OurAirports",
+              "include": true
+            }
+          ]
+        }
+      ],
+      "nodeMappings": [
+        {
+          "node": {
+            "$ref": "#n:n0"
+          },
+          "fileSchema": {
+            "$ref": "#f:1"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "RouteID",
+              "property": {
+                "$ref": "#p:71"
+              }
+            },
+            {
+              "fieldName": "Airline",
+              "property": {
+                "$ref": "#p:72"
+              }
+            },
+            {
+              "fieldName": "Airline ID",
+              "property": {
+                "$ref": "#p:73"
+              }
+            },
+            {
+              "fieldName": "Source airport",
+              "property": {
+                "$ref": "#p:74"
+              }
+            },
+            {
+              "fieldName": "Source airport ID",
+              "property": {
+                "$ref": "#p:75"
+              }
+            },
+            {
+              "fieldName": "Destination airport",
+              "property": {
+                "$ref": "#p:76"
+              }
+            },
+            {
+              "fieldName": "Destination airport ID",
+              "property": {
+                "$ref": "#p:77"
+              }
+            },
+            {
+              "fieldName": "Codeshare",
+              "property": {
+                "$ref": "#p:78"
+              }
+            },
+            {
+              "fieldName": "Stops",
+              "property": {
+                "$ref": "#p:79"
+              }
+            },
+            {
+              "fieldName": "Equipment",
+              "property": {
+                "$ref": "#p:80"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n1"
+          },
+          "fileSchema": {
+            "$ref": "#f:3"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "Airport ID",
+              "property": {
+                "$ref": "#p:81"
+              }
+            },
+            {
+              "fieldName": "Name",
+              "property": {
+                "$ref": "#p:82"
+              }
+            },
+            {
+              "fieldName": "City",
+              "property": {
+                "$ref": "#p:83"
+              }
+            },
+            {
+              "fieldName": "Country",
+              "property": {
+                "$ref": "#p:84"
+              }
+            },
+            {
+              "fieldName": "IATA",
+              "property": {
+                "$ref": "#p:85"
+              }
+            },
+            {
+              "fieldName": "ICAO",
+              "property": {
+                "$ref": "#p:86"
+              }
+            },
+            {
+              "fieldName": "Latitude",
+              "property": {
+                "$ref": "#p:87"
+              }
+            },
+            {
+              "fieldName": "Longitude",
+              "property": {
+                "$ref": "#p:88"
+              }
+            },
+            {
+              "fieldName": "Altitude",
+              "property": {
+                "$ref": "#p:89"
+              }
+            },
+            {
+              "fieldName": "Timezone",
+              "property": {
+                "$ref": "#p:90"
+              }
+            },
+            {
+              "fieldName": "DST",
+              "property": {
+                "$ref": "#p:91"
+              }
+            },
+            {
+              "fieldName": "Tz database time zone",
+              "property": {
+                "$ref": "#p:92"
+              }
+            },
+            {
+              "fieldName": "Type",
+              "property": {
+                "$ref": "#p:93"
+              }
+            },
+            {
+              "fieldName": "Source",
+              "property": {
+                "$ref": "#p:94"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n2"
+          },
+          "fileSchema": {
+            "$ref": "#f:3"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "Airport ID",
+              "property": {
+                "$ref": "#p:33"
+              }
+            },
+            {
+              "fieldName": "Name",
+              "property": {
+                "$ref": "#p:34"
+              }
+            },
+            {
+              "fieldName": "City",
+              "property": {
+                "$ref": "#p:35"
+              }
+            },
+            {
+              "fieldName": "Country",
+              "property": {
+                "$ref": "#p:36"
+              }
+            },
+            {
+              "fieldName": "IATA",
+              "property": {
+                "$ref": "#p:37"
+              }
+            },
+            {
+              "fieldName": "ICAO",
+              "property": {
+                "$ref": "#p:38"
+              }
+            },
+            {
+              "fieldName": "Latitude",
+              "property": {
+                "$ref": "#p:39"
+              }
+            },
+            {
+              "fieldName": "Longitude",
+              "property": {
+                "$ref": "#p:40"
+              }
+            },
+            {
+              "fieldName": "Altitude",
+              "property": {
+                "$ref": "#p:41"
+              }
+            },
+            {
+              "fieldName": "Timezone",
+              "property": {
+                "$ref": "#p:42"
+              }
+            },
+            {
+              "fieldName": "DST",
+              "property": {
+                "$ref": "#p:43"
+              }
+            },
+            {
+              "fieldName": "Tz database time zone",
+              "property": {
+                "$ref": "#p:44"
+              }
+            },
+            {
+              "fieldName": "Type",
+              "property": {
+                "$ref": "#p:45"
+              }
+            },
+            {
+              "fieldName": "Source",
+              "property": {
+                "$ref": "#p:46"
+              }
+            }
+          ]
+        },
+        {
+          "node": {
+            "$ref": "#n:n3"
+          },
+          "fileSchema": {
+            "$ref": "#f:2"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "Airline ID",
+              "property": {
+                "$ref": "#p:95"
+              }
+            },
+            {
+              "fieldName": "Name",
+              "property": {
+                "$ref": "#p:96"
+              }
+            },
+            {
+              "fieldName": "Alias",
+              "property": {
+                "$ref": "#p:97"
+              }
+            },
+            {
+              "fieldName": "IATA",
+              "property": {
+                "$ref": "#p:98"
+              }
+            },
+            {
+              "fieldName": "ICAO",
+              "property": {
+                "$ref": "#p:99"
+              }
+            },
+            {
+              "fieldName": "Callsign",
+              "property": {
+                "$ref": "#p:100"
+              }
+            },
+            {
+              "fieldName": "Country",
+              "property": {
+                "$ref": "#p:101"
+              }
+            },
+            {
+              "fieldName": "Active",
+              "property": {
+                "$ref": "#p:102"
+              }
+            }
+          ]
+        }
+      ],
+      "relationshipMappings": [
+        {
+          "relationship": {
+            "$ref": "#r:n0"
+          },
+          "fileSchema": {
+            "$ref": "#f:1"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "Airline",
+              "property": {
+                "$ref": "#p:103"
+              }
+            },
+            {
+              "fieldName": "Airline ID",
+              "property": {
+                "$ref": "#p:104"
+              }
+            },
+            {
+              "fieldName": "Source airport",
+              "property": {
+                "$ref": "#p:105"
+              }
+            },
+            {
+              "fieldName": "Source airport ID",
+              "property": {
+                "$ref": "#p:106"
+              }
+            },
+            {
+              "fieldName": "Destination airport",
+              "property": {
+                "$ref": "#p:107"
+              }
+            },
+            {
+              "fieldName": "Codeshare",
+              "property": {
+                "$ref": "#p:108"
+              }
+            },
+            {
+              "fieldName": "Stops",
+              "property": {
+                "$ref": "#p:109"
+              }
+            },
+            {
+              "fieldName": "Equipment",
+              "property": {
+                "$ref": "#p:110"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "RouteID"
+          },
+          "toMapping": {
+            "fieldName": "Destination airport ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n1"
+          },
+          "fileSchema": {
+            "$ref": "#f:1"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "Airline",
+              "property": {
+                "$ref": "#p:63"
+              }
+            },
+            {
+              "fieldName": "Airline ID",
+              "property": {
+                "$ref": "#p:64"
+              }
+            },
+            {
+              "fieldName": "Source airport",
+              "property": {
+                "$ref": "#p:65"
+              }
+            },
+            {
+              "fieldName": "Destination airport",
+              "property": {
+                "$ref": "#p:66"
+              }
+            },
+            {
+              "fieldName": "Destination airport ID",
+              "property": {
+                "$ref": "#p:67"
+              }
+            },
+            {
+              "fieldName": "Codeshare",
+              "property": {
+                "$ref": "#p:68"
+              }
+            },
+            {
+              "fieldName": "Stops",
+              "property": {
+                "$ref": "#p:69"
+              }
+            },
+            {
+              "fieldName": "Equipment",
+              "property": {
+                "$ref": "#p:70"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "RouteID"
+          },
+          "toMapping": {
+            "fieldName": "Source airport ID"
+          }
+        },
+        {
+          "relationship": {
+            "$ref": "#r:n2"
+          },
+          "fileSchema": {
+            "$ref": "#f:1"
+          },
+          "propertyMappings": [
+            {
+              "fieldName": "Airline",
+              "property": {
+                "$ref": "#p:111"
+              }
+            },
+            {
+              "fieldName": "Source airport",
+              "property": {
+                "$ref": "#p:112"
+              }
+            },
+            {
+              "fieldName": "Source airport ID",
+              "property": {
+                "$ref": "#p:113"
+              }
+            },
+            {
+              "fieldName": "Destination airport",
+              "property": {
+                "$ref": "#p:114"
+              }
+            },
+            {
+              "fieldName": "Destination airport ID",
+              "property": {
+                "$ref": "#p:115"
+              }
+            },
+            {
+              "fieldName": "Codeshare",
+              "property": {
+                "$ref": "#p:116"
+              }
+            },
+            {
+              "fieldName": "Stops",
+              "property": {
+                "$ref": "#p:117"
+              }
+            },
+            {
+              "fieldName": "Equipment",
+              "property": {
+                "$ref": "#p:118"
+              }
+            }
+          ],
+          "fromMapping": {
+            "fieldName": "RouteID"
+          },
+          "toMapping": {
+            "fieldName": "Airline ID"
+          }
+        }
+      ]
+    },
+    "configurations": {
+      "idsToIgnore": []
+    },
+    "errors": {
+      "fileSchemaErrors": [],
+      "nodeErrors": [],
+      "relationshipErrors": []
+    }
+  }
+}

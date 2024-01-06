@@ -1,0 +1,124 @@
+html
+{
+	background-color: white;
+}
+
+#pageContent
+{
+	/* height:90%; */
+	border: 5px solid rgb(140, 139, 139);
+	/* display: flex; */
+	background-color: aliceblue;
+}
+
+#dropdownDiv
+{
+	height:5vh;
+	display:flex;
+}
+
+
+#pageTitle
+{
+	height:10%;
+	text-align: center;
+	font-size: 4.5vw;
+}
+
+
+#nameGrid
+{
+	/* background-color: pink; */
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr)); 
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	/* text-align: center; */
+	margin-top: 3vh;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-bottom: 20px;
+}
+#submitButton
+{
+	width: 9vw;
+	height: 5vh;
+}
+
+
+.inputField
+{
+	width: 12vw;
+	height: 5vh;
+	border-radius: 1vw;
+	font-size: 1.2vw;
+	text-indent: 0.5vw;
+}
+
+.inputHolder
+{
+	display:grid;
+	grid-template-columns: repeat(1, 1fr); 
+	text-align: center;
+	justify-items: center;
+}
+.center
+{
+	grid-template-columns: repeat(2, 1fr); 
+}
+
+#selectionHolder
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#submitButton
+{
+	background: rgb(190, 207, 222);
+	border: 0.5px soldi black;
+}
+#errorHolder
+{
+	text-align: center;
+	color: red;
+}
+
+.popup {
+	position: fixed;
+	/* top: 50%; */
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	z-index: 999;
+	
+
+  }
+
+.nameButton
+{
+	background-color: rgb(174, 214, 249);
+	border: none;
+	border-radius: 0.2vw;
+}
+
+.route-details-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.route-details-table th, .route-details-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.journey-path {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+

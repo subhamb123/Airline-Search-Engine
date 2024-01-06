@@ -1,0 +1,90 @@
+Airline ID,Name,Alias,IATA,ICAO,Callsign,Country,Active
+24,American Airlines,\N,AA,AAL,AMERICAN,United States,Y
+29,Askari Aviation,\N,4K,AAS,AL-AAS,Pakistan,Y
+32,Afriqiyah Airways,\N,8U,AAW,AFRIQIYAH,Libya,Y
+55,Astral Aviation,\N,8V,ACP,ASTRAL CARGO,Kenya,Y
+68,Air Tindi,\N,8T,,,Canadian Territories,Y
+96,Aegean Airlines,\N,A3,AEE,AEGEAN,Greece,Y
+146,Air Salone,\N,2O,,,Sierra Leone,Y
+341,Air North Charter - Canada,\N,4N,ANT,AIR NORTH,Canada,Y
+410,Aerocondor,\N,2B,ARD,AEROCONDOR,Portugal,Y
+442,Air Sinai,\N,4D,ASD,AIR SINAI,Egypt,Y
+470,Air Burkina,\N,2J,VBW,BURKINA,Burkina Faso,Y
+503,Aeroflot-Nord,\N,5N,AUL,DVINA,Russia,Y
+563,Aeroline GmbH,\N,7E,AWU,SYLT-AIR,Germany,Y
+595,Atlant-Soyuz Airlines,\N,3G,AYZ,ATLANT-SOYUZ,Russia,Y
+897,Air Philippines,\N,2P,GAP,ORIENT PACIFIC,Philippines,Y
+1073,Air Moldova,\N,9U,MLD,AIR MOLDOVA,Moldova,Y
+1109,Astair,\N,8D,,,Russian Federation,Y
+1173,Airbus France,\N,4Y,RBU,AIRBUS FRANCE,France,N
+1203,Airlinair,\N,A5,RLA,AIRLINAIR,France,Y
+1338,Aerolineas Galapagos (Aerogal),\N,2K,GLG,AEROGAL,Ecuador,Y
+1340,Alrosa Mirny Air Enterprise,\N,6R,DRU,MIRNY,Russia,Y
+1392,Benin Golf Air,\N,A8,BGL,BENIN GOLF,Benin,N
+1401,Belair Airlines,\N,4T,BHP,BELAIR,Switzerland,Y
+1469,BRA-Transportes Aereos,\N,7R,BRB,BRA-TRANSPAEREOS,Brazil,N
+1472,Bering Air,\N,8E,BRG,BERING AIR,United States,Y
+1500,Metro Batavia,\N,7P,BTV,BATAVIA,Indonesia,Y
+1581,CAL Cargo Air Lines,\N,5C,ICL,CAL,Israel,Y
+1623,Canadian North,\N,5T,MPE,EMPRESS,Canada,Y
+1629,Cape Air,\N,9K,KAP,CAIR,United States,Y
+1654,Cargoitalia,\N,2G,CRG,WHITE PELICAN,Italy,N
+1683,Cebu Pacific,\N,5J,CEB,CEBU AIR,Philippines,Y
+1729,Changan Airlines,\N,2Z,CGN,CHANGAN,China,N
+2354,First Air,\N,7F,FAB,,Canada,Y
+2524,Gazpromavia,\N,4G,GZP,GAZPROMAVIA,Russia,Y
+2538,Georgian Airways,\N,A9,TGZ,TAMAZI,Georgia,Y
+2548,Germanwings,\N,4U,GWI,GERMAN WINGS,Germany,Y
+2750,Helvetic Airways,\N,2L,OAW,HELVETIC,Switzerland,Y
+2850,IndiGo Airlines,\N,6E,IGO,IFLY,India,Y
+2916,Intersky,\N,3L,ISK,INTERSKY,Austria,Y
+2942,Cargo Plus Aviation,\N,8L,CGP,,United Arab Emirates,Y
+2954,Israir,\N,6H,ISR,ISRAIR,Israel,Y
+2994,Jeju Air,\N,7C,JJA,JEJU AIR,Republic of Korea,Y
+3000,Jet Airways,\N,9W,JAI,JET AIRWAYS,India,Y
+3021,Jetstar Asia Airways,\N,3K,JSA,JETSTAR ASIA,Singapore,Y
+3201,LAN Argentina,\N,4M,DSM,LAN AR,Argentina,Y
+3432,Maxair,\N,8M,MXL,MAXAIR,Sweden,Y
+3534,Myway Airlines,\N,8I,,,Italy,Y
+3545,Moskovia Airlines,\N,3R,GAI,GROMOV AIRLINE,Russia,Y
+3652,NextJet,\N,2N,NTJ,NEXTJET,Sweden,Y
+3788,Onur Air,\N,8Q,OHY,ONUR AIR,Turkey,Y
+3835,PB Air,\N,9Q,PBA,PEEBEE AIR,Thailand,Y
+3856,Pacific Coastal Airline,\N,8P,PCO,PASCO,Canada,Y
+3976,Pinnacle Airlines,\N,9E,FLG,FLAGSHIP,United States,Y
+4388,Star Flyer,\N,7G,SFJ,STARFLYER,Japan,Y
+4436,Sibaviatrans,\N,5M,SIB,SIBAVIA,Russia,Y
+4496,Skyservice Airlines,\N,5G,SSV,SKYTOUR,Canada,Y
+4550,Southern Winds Airlines,\N,A4,SWD,SOUTHERN WINDS,Argentina,Y
+4608,Sichuan Airlines,\N,3U,CSC,SI CHUAN,China,Y
+4691,SATENA,\N,9R,NSE,SATENA,Colombia,Y
+4805,Saratov Aviation Division,\N,6W,SOV,SARATOV AIR,Russia,Y
+5002,Tiara Air,\N,3P,TNM,TIARA,Aruba,Y
+5188,TRIP Linhas A,\N,8R,TIB,TRIP,Brazil,Y
+5521,Zip,\N,3J,WZP,ZIPPER,Canada,N
+5813,Air Mandalay,,6T,\N,Six Tango,Burma,Y
+8359,Star Peru (2I),,2I,\N,,Peru,Y
+8463,United Airways,,4H,UBD,UNITED BANGLADESH,Bangladesh,Y
+8576,Fly540,,5H,FFV,SWIFT TANGO,Kenya,Y
+9531,Tajik Air,,7J,\N,,Tajikistan,Y
+9818,Air Arabia Maroc,,3O,\N,Air Arabia,Morocco,Y
+10650,Pal airlines,,5P,\N,,Chile,Y
+10739,Air Choice One,,3E,\N,,United States,Y
+10758,Safi Airlines,,4Q,\N,,Afghanistan,Y
+11741,Air Antilles Express,,3S,\N,GREEN BIRD,Guadeloupe,Y
+11814,SmartLynx Airlines,,6Y,\N,,Latvia,Y
+15999,China SSS,Chunqiu Airlines,9C,\N,,China,Y
+16262,Fly Colombia ( Interliging Flights ),,3F,3FF,,Colombia,Y
+16615,Mongolian International Air Lines ,Mongol Air ,7M,ZTF,Mongol_AIr ,Mongolia,Y
+16726,Era Alaska,,7H,ERR,ERAH,United States,Y
+17095,Fly 6ix,,6I,\N,,Sierra Leone,Y
+17408,BusinessAir,,8B,BCC,,Thailand,Y
+17885,Interjet (ABC Aerolineas),,4O,\N,INTERJET,Mexico,Y
+18232,BQB Lineas Aereas,Buquebus,5Q,\N,,Uruguay,Y
+18944,Insel Air (7I/INC) (Priv),,7I,\N,,Netherlands Antilles,Y
+18946,VivaColombia,,5Z,VVC,,Colombia,Y
+19804,All America,All America,A2,AL2,,United States,Y
+19810,Regional Air Iceland,Regional Air Iceland,9N,N78,,Iceland,Y
+20004,Volotea Costa Rica,Volotea Costa Rica,9V,VC9,,Costa Rica,Y
+20565,Boutique Air (Priv),,4B,BTQ,,United States,Y
+20710,Silver Airways (3M),,3M,\N,Silver Wings,United States,Y
